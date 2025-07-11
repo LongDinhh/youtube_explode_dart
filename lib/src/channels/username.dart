@@ -17,7 +17,7 @@ abstract class Username with _$Username {
         'Invalid username',
       );
     }
-    return Username._(username);
+    return Username.internal(username);
   }
 
   ///  Converts [obj] to a [Username] by calling .toString on that object.
@@ -29,7 +29,7 @@ abstract class Username with _$Username {
     return Username(obj.toString());
   }
 
-  const factory Username._(
+  const factory Username.internal(
     /// User name as string.
     String value,
   ) = _Username;

@@ -18,7 +18,7 @@ abstract class ChannelHandle with _$ChannelHandle {
         'Invalid ChannelHandle',
       );
     }
-    return ChannelHandle._(channelHandle);
+    return ChannelHandle.internal(value: channelHandle);
   }
 
   ///  Converts [obj] to a [ChannelHandle] by calling .toString on that object.
@@ -30,10 +30,10 @@ abstract class ChannelHandle with _$ChannelHandle {
     return ChannelHandle(obj.toString());
   }
 
-  const factory ChannelHandle._(
+  const factory ChannelHandle.internal({
     /// Handle as string.
-    String value,
-  ) = _ChannelHandle;
+    required String value,
+  }) = _ChannelHandle;
 
   /// Channel handles must start with @ can contain only letters, numbers, periods, dashes and underscores.
   static final _handleExp = RegExp(r'^@[a-zA-Z0-9\\-_.]+$');
