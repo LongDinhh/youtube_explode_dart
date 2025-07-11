@@ -281,6 +281,13 @@ class _StreamInfo extends StreamInfoProvider {
   final StreamSource source;
 
   _StreamInfo(this.root, this.source);
+
+  @override
+  late final loudnessDb = double.tryParse(root.getT('loudnessDb')?.toString() ?? "");
+
+  @override
+  late final duration =
+      int.tryParse(root.getT<String>('approxDurationMs') ?? "");
 }
 
 extension PipeExt<T extends Object?> on T {
