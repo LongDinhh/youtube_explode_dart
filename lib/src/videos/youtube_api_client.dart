@@ -81,6 +81,8 @@ class YoutubeApiClient {
         'deviceModel': 'Quest 3',
         'osVersion': '12',
         'osName': 'Android',
+        'userAgent':
+            'com.google.android.apps.youtube.vr.oculus/1.60.19 (Linux; U; Android 12L; eureka-user Build/SQ3A.220605.009.A1) gzip',
         'androidSdkVersion': '32',
         'hl': 'en',
         'timeZone': 'UTC',
@@ -158,7 +160,9 @@ class YoutubeApiClient {
     'context': {
       'client': {
         'clientName': 'WEB_CREATOR',
-        'clientVersion': '1.20240723.03.00',
+        'clientVersion': '2.20241202.07.00',
+        'userAgent':
+            'Mozilla/5.0 (iPad; CPU OS 16_7_10 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1,gzip(gfe)',
         'hl': 'en',
         'timeZone': 'UTC',
         'utcOffsetMinutes': 0,
